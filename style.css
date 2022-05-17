@@ -89,7 +89,7 @@ main {
     min-width: 40%;
 }
 
-.menu--trigger {
+/* .menu--trigger {
     cursor: pointer;
 }
 
@@ -101,7 +101,7 @@ main {
 .menu--projects.open {
     display: block;
     opacity: 1;
-}
+} */
 
 .close-btn img {
     max-width: var(--title-main);
@@ -178,6 +178,21 @@ main {
     text-transform: uppercase;
 }
 
+.button--open {
+    cursor: pointer;
+}
+
+.content--open {
+    display: none;
+    opacity: 0;
+}
+
+.content--open.open {
+    display: block;
+    opacity: 1;
+}
+
+
 @media screen and (max-width: 600px) {
     :root {
         --txt-copy: .8rem;
@@ -200,6 +215,12 @@ main {
         flex-direction: column;
     }
 
+    header li a,
+    footer li a {
+        display: inline-block;
+        margin-bottom: 8px;
+    }
+
     .menu--main,
     .menu--projects,
     footer ul {
@@ -207,7 +228,7 @@ main {
     }
 
     footer ul {
-        margin-top: 1rem;
+        margin-top: 2rem;
     }
 
     .close-btn {

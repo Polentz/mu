@@ -5,7 +5,7 @@ function init() {
 }
 
 function initMouseClick() {
-    toggleClassOnClick(".menu--trigger", ".menu--projects", "open");
+    toggleClassOnClick(".button--open", ".content--open", "open");
     // scrollToHref(".js-href");
 }
 
