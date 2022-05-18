@@ -208,3 +208,15 @@ img::selection {
     color: var(--txt-color);
     background: transparent;
 }
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--extra-color);
+}
