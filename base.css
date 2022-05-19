@@ -176,7 +176,9 @@ audio::-moz-selection,
 video::-moz-selection,
 div::-moz-selection,
 br::-moz-selection,
-em::-moz-selection {
+em::-moz-selection,
+u::-moz-selection,
+strong::-moz-selection {
     color: var(--bg-color);
     background: var(--txt-color);
 }
@@ -185,6 +187,11 @@ span::-moz-selection,
 img::-moz-selection {
     color: var(--txt-color);
     background: transparent;
+}
+
+mark::-moz-selection {
+    color: var(--txt-color);
+    background: var(--bg-color);
 }
 
 p::selection,
@@ -198,7 +205,9 @@ audio::selection,
 video::selection,
 div::selection,
 br::selection,
-em::selection {
+em::selection,
+u::selection,
+strong::selection {
     color: var(--bg-color);
     background: var(--txt-color);
 }
@@ -207,6 +216,11 @@ span::selection,
 img::selection {
     color: var(--txt-color);
     background: transparent;
+}
+
+mark::selection {
+    color: var(--txt-color);
+    background: var(--bg-color);
 }
 
 ::-webkit-scrollbar {

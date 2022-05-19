@@ -5,8 +5,7 @@ function init() {
 }
 
 function initMouseClick() {
-    toggleClassOnClick(".button--open", ".content--open", "open");
-    // scrollToHref(".js-href");
+    toggleClassOnClick(".btn--open", ".content--open", "open");
 }
 
 function toggleClassOnClick(trigger, element, className) {
@@ -15,18 +14,3 @@ function toggleClassOnClick(trigger, element, className) {
         event.stopPropagation();
     });
 }
-
-// function scrollToHref(anchorTags) {
-//     const links = document.querySelectorAll(anchorTags);
-//     links.forEach(link => {
-//         link.addEventListener("click", (event) => {
-//             event.preventDefault();
-//             console.log("click")
-//             const href = link.getAttribute("href");
-//             document.querySelector(href).scrollIntoView({
-//                 behavior: "smooth"
-//             });
-//         });
-//     });
-// }
-
