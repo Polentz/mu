@@ -30,9 +30,11 @@ body {
 a {
     position: relative;
     text-decoration: underline;
+    color: var(--txt-color);
 }
 
-a:visited {
+a:visited,
+a:focus {
     color: var(--txt-color);
 }
 
@@ -58,6 +60,7 @@ a:hover::after {
 
 h2 a,
 h3 a,
+h4 a,
 header a,
 footer a,
 .nav--btn a,
@@ -68,6 +71,7 @@ footer a,
 
 h2 a::after,
 h3 a::after,
+h4 a::after,
 header a::after,
 footer a::after,
 .nav--btn a::after,
@@ -77,6 +81,7 @@ footer a::after,
 
 h2 a:hover,
 h3 a:hover,
+h4 a:hover,
 header a:hover,
 footer a:hover,
 .nav--btn a:hover,
@@ -128,6 +133,13 @@ h3 {
     font-size: var(--title-copy);
     font-weight: 500;
     text-transform: uppercase;
+}
+
+h4 {
+    font-size: var(--txt-small);
+    font-weight: 300;
+    margin-bottom: var(--small-pm);
+    line-height: 1.5;
 }
 
 header,
@@ -287,12 +299,11 @@ main {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
     gap: var(--small-pm);
 }
 
 .--sponsor img {
-    max-width: 120px;
+    max-width: 72px;
 }
 
 .btn--open {
@@ -311,6 +322,7 @@ main {
 
 .active a {
     color: var(--extra-color);
+    /* text-decoration: underline var(--extra-color); */
 }
 
 @media screen and (max-width: 900px) {
