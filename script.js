@@ -1,6 +1,6 @@
 const menu = document.querySelector(".btn--open");
 const submenu = document.querySelector(".content--open");
-const buttons = document.querySelectorAll(".--colored");
+const buttons = document.querySelectorAll(".nav--link");
 
 
 if (menu) {
@@ -11,7 +11,7 @@ if (menu) {
 }
 
 if (buttons) {
-    buttons[0].classList.add("active");
+    // buttons[0].classList.add("active");
     buttons.forEach(b => {
         b.addEventListener("click", () => {
             buttons.forEach(btn => {
