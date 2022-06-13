@@ -147,10 +147,6 @@ ins {
     text-decoration: none;
 }
 
-a {
-    color: inherit;
-}
-
 button,
 label {
     cursor: pointer;
@@ -177,6 +173,7 @@ video::-moz-selection,
 div::-moz-selection,
 br::-moz-selection,
 em::-moz-selection,
+i::-moz-selection,
 u::-moz-selection,
 strong::-moz-selection {
     color: var(--bg-color);
@@ -206,6 +203,7 @@ video::selection,
 div::selection,
 br::selection,
 em::selection,
+i::selection,
 u::selection,
 strong::selection {
     color: var(--bg-color);

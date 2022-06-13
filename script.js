@@ -1,16 +1,35 @@
-window.onload = init;
+const menu = document.querySelector(".btn--open");
+const submenu = document.querySelector(".content--open");
+const buttons = document.querySelectorAll(".--colored");
 
-function init() {
-    initMouseClick();
-}
 
-function initMouseClick() {
-    toggleClassOnClick(".btn--open", ".content--open", "open");
-}
-
-function toggleClassOnClick(trigger, element, className) {
-    document.querySelector(trigger).addEventListener("click", (event) => {
-        document.querySelector(element).classList.toggle(className);
+if (menu) {
+    menu.addEventListener("click", (event) => {
+        submenu.classList.toggle("open");
         event.stopPropagation();
     });
 }
+
+if (buttons) {
+    buttons[0].classList.add("active");
+    buttons.forEach(b => {
+        b.addEventListener("click", () => {
+            buttons.forEach(btn => {
+                btn.classList.remove("active");
+            })
+            b.classList.add("active");
+        });
+    });
+}
+
+
+
+// buttons[0].classList.add("active");
+// buttons.forEach(b => {
+//     b.addEventListener("click", () => {
+//         buttons.forEach(btn => {
+//             btn.classList.remove("active");
+//         })
+//         b.classList.add("active");
+//     });
+// });
