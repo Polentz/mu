@@ -18,6 +18,16 @@ html {
     scroll-behavior: smooth;
 }
 
+canvas {
+    vertical-align: bottom;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* z-index: -1; */
+    pointer-events: none;
+    mix-blend-mode: overlay;
+}
+
 body {
     max-width: 1512px;
     margin: 0 auto;
@@ -181,6 +191,10 @@ main {
 
 .btn--logo img {
     max-width: calc(3vw + 1rem);
+}
+
+.btn--close {
+    cursor: pointer;
 }
 
 .btn--close img {
