@@ -58,6 +58,7 @@ navLinks.forEach(link => {
 });
 
 closeButton.addEventListener("click", (event) => {
+    event.preventDefault();
     if (history.length) {
         history.back();
         return false;
