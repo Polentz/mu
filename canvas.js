@@ -26,6 +26,12 @@ window.addEventListener("mousemove", (event) => {
     drawCircle();
 })
 
+window.addEventListener("touchmove", (event) => {
+    mouse.x = event.x;
+    mouse.y = event.y;
+    drawCircle();
+})
+
 // function drawLogo() {
 //     ctx.fillStyle = "red";
 //     ctx.beginPath();
@@ -51,6 +57,10 @@ class Particle {
     constructor() {
         this.x = Math.random() * canvas.width;
         this.y = Math.random() * canvas.height;
+        // this.x = canvas.width / 2;
+        // this.y = canvas.height / 2;
+        // this.x = canvas.width * 1 - 1;;
+        // this.y = canvas.height * 1 - 1;
         this.size = Math.random() * 90 + 10;
         this.speedX = Math.random() * 3 - 1.5;
         this.speedY = Math.random() * 3 - 1.5;
