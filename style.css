@@ -45,7 +45,7 @@ a:focus {
 a::after {
     content: "";
     display: inline;
-    background: var(--acc-color);
+    background: var(--extra-color);
     width: 100%;
     height: 4px;
     position: absolute;
