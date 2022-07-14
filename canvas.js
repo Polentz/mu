@@ -15,10 +15,10 @@ const mouse = {
     y: undefined,
 }
 
-window.addEventListener("click", () => {
-    clearCanvas();
-    init();
-})
+// window.addEventListener("click", () => {
+//     clearCanvas();
+//     init();
+// })
 
 window.addEventListener("mousemove", (event) => {
     mouse.x = event.x;
@@ -31,16 +31,6 @@ window.addEventListener("touchmove", (event) => {
     mouse.y = event.y;
     drawCircle();
 })
-
-// function drawLogo() {
-//     ctx.fillStyle = "red";
-//     ctx.beginPath();
-//     ctx.moveTo(100, 250);
-//     ctx.quadraticCurveTo(250, 100, 400, 250);
-//     ctx.moveTo(100, 250);
-//     ctx.quadraticCurveTo(250, 400, 400, 250);
-//     ctx.fill()
-// }
 
 function drawCircle() {
     ctx.fillStyle = "white";
@@ -71,7 +61,7 @@ class Particle {
     }
     draw() {
         ctx.beginPath();
-        ctx.fillStyle = "yellow";
+        ctx.fillStyle = "#ffff00";
         ctx.arc(this.x, this.y, 80, 45, Math.PI * 2)
         ctx.fill();
     }

@@ -6,10 +6,8 @@
 
     --txt-color: #1d1d1d;
     --bg-color: #fff;
-    --extra-color: #F3DB00;
+    --extra-color: #f3db00;
     --acc-color: #ffff00;
-    /* fffe1e */
-    /* #fde71e */
     --main-pm: 2rem;
     --small-pm: 1rem;
 }
@@ -152,13 +150,12 @@ canvas {
     height: 100%;
     vertical-align: bottom;
     z-index: 1;
-    /* filter: blur(12px); */
+    /* filter: blur(8px); */
 }
 
 main {
     display: flex;
     position: relative;
-    /* padding: var(--main-pm); */
 }
 
 header,
@@ -200,8 +197,34 @@ footer {
     cursor: pointer;
 }
 
-.btn--close img {
+/* double img solution in case of svg failure */
+/* find html in tule 2021 html file */
+
+/* .btn--close img {
     max-width: calc(2vw + 1rem);
+}
+
+.btn--close--hover {
+    position: fixed;
+    top: var(--main-pm);
+    right: var(--main-pm);
+    z-index: 2;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+}
+
+.btn--close img:hover.btn--close--hover {
+    opacity: 1;
+} */
+
+.btn--close svg {
+    stroke: var(--txt-color);
+    max-width: calc(2vw + 1rem);
+    transition: stroke .5s ease-in-out;
+}
+
+.btn--close svg:hover {
+    stroke: var(--extra-color);
 }
 
 .btn--menu {
@@ -242,8 +265,6 @@ footer {
 
 .col--nav {
     height: 100vh;
-    /* display: flex; */
-    /* flex-direction: column; */
     position: sticky;
     top: 0;
     padding: var(--main-pm);
@@ -351,7 +372,6 @@ footer {
         --title-main: calc(1vw + 2rem);
         --txt-copy: .8rem;
         --txt-small: .8rem;
-        /* --large-pm: 3rem; */
         --main-pm: 1rem;
     }
 
@@ -403,12 +423,6 @@ footer {
     .col--content {
         padding-right: var(--main-pm);
     }
-
-    /* .content--nav {
-        display: flex;
-        flex-wrap: wrap;
-        column-gap: 1rem;
-    } */
 
     #event--nav {
         height: 80%;
