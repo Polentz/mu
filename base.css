@@ -230,5 +230,5 @@ mark::selection {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--acc-color);
+    background: var(--extra-color);
 }

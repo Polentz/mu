@@ -50,27 +50,28 @@
                     <li><a class="btn--open">Progetti</a></li>
                     <li><a href="about.html">About</a></li>
                 </ul>
-                <ul class="menu--projects content--open">
+                <ul id="menu" class="menu--projects content--open cms-editable">
                     <li><br><a href="tule.html">Tule</a></li>
                     <li><a href="elementi.html">Elementi</a></li>
-                    <li><a href="3eco-cienfuegos.html">3ECO – Cienfuegos</a></li>
+                    <li class="cms-repeatable"><a href="3eco-cienfuegos.html">3ECO – Cienfuegos</a></li>
                 </ul>
             </nav>
         </header>
         <footer>
-            <ul class="contact">
-                <li><a href="https://www.facebook.com/munonesiste">Facebook </a></li>
-                <li><a href="https://www.instagram.com/munonesiste/">Instagram</a></li>
-                <li><a href="https://www.youtube.com/channel/UCaIzG0dQ4hnzzTw4ivjeCdQ">YouTube</a></li>
+            <ul id="footer" class="contact cms-editable">
+                <li class="cms-repeatable"><a href="https://www.facebook.com/munonesiste">Facebook </a></li>
+                <li class="cms-repeatable"><a href="https://www.instagram.com/munonesiste/">Instagram</a></li>
+                <li class="cms-repeatable"><a
+                        href="https://www.youtube.com/channel/UCaIzG0dQ4hnzzTw4ivjeCdQ">YouTube</a></li>
             </ul>
-            <div class="logo">
+            <div class="logo cms-lock">
                 <h1><span>M</span><img src="assets/logo-mu.svg"><span>U</span></h1>
             </div>
         </footer>
     </main>
-    <canvas id="canvas"></canvas>
+    <!-- <canvas id="canvas"></canvas> -->
+    <!-- <script src="canvas.js"></script> -->
     <script src="script.js"></script>
-    <script src="canvas.js"></script>
 </body>
 
 </html>
